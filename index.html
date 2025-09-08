@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OMNICODE</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>O.M.N.I.C.O.D.E</h1>
+
+    <textarea id="input" placeholder="Enter your data..."></textarea>
+
+    <div class="selectors">
+
+      <div class="select-group">
+
+        <label>From:</label>
+
+        <select id="from">
+
+          <option value="text">Text</option>
+
+          <option value="binary">Binary</option>
+
+          <option value="hex">Hex</option>
+
+          <option value="octal">Octal</option>
+
+          <option value="decimal">Decimal</option>
+
+          <option value="morse">Morse</option>
+
+        </select>
+
+      </div>
+
+      <div class="select-group">
+
+        <label>To:</label>
+
+        <select id="to">
+
+          <option value="text">Text</option>
+
+          <option value="binary">Binary</option>
+
+          <option value="hex">Hex</option>
+
+          <option value="octal">Octal</option>
+
+          <option value="decimal">Decimal</option>
+
+          <option value="morse">Morse</option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+    <button onclick="convert()">Translate</button>
+
+    <textarea id="output" readonly placeholder="Your converted output..."></textarea>
+
+    <button id="copyBtn" onclick="copyOutput()">Copy Output</button>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
